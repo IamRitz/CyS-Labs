@@ -83,3 +83,14 @@ Which of these are MISSING? (cross-reference Lecture 1 OWASP Top 10:2025 — A06
    worth testing for injection/XSS, but no exploitable XSS has been
    established from this initial observation. **Potential OWASP mapping:
    A05:2025 — Injection.**
+
+## PR Template Setup
+
+- File: `.github/PULL_REQUEST_TEMPLATE.md`
+- Sections included: Goal / Changes / Testing / Artifacts & Screenshots
+- Checklist items:
+  - Title is clear (`feat(labN): <topic>`) style
+  - No secrets/large temp files committed
+  - Submission file at `submissions/labN.md` exists
+- Auto-fill verified: [x] Yes — PR description was automatically populated with the template when the Lab 1 draft PR was created.
+- Evidence: `screenshots/pr-template-autofill.png`
