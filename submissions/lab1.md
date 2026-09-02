@@ -88,9 +88,25 @@ Which of these are MISSING? (cross-reference Lecture 1 OWASP Top 10:2025 — A06
 
 - File: `.github/PULL_REQUEST_TEMPLATE.md`
 - Sections included: Goal / Changes / Testing / Artifacts & Screenshots
-- Checklist items:
-  - Title is clear (`feat(labN): <topic>`) style
-  - No secrets/large temp files committed
-  - Submission file at `submissions/labN.md` exists
-- Auto-fill verified: [x] Yes — PR description was automatically populated with the template when the Lab 1 draft PR was created.
-- Evidence: `screenshots/pr-template-autofill.png`
+- Checklist items: 
+ - Title is clear (feat(labN): <topic> style)
+ - No secrets/large temp files committed
+ - Submission file at submissions/labN.md exists
+- Auto-fill verified: [X] Yes — PR description showed my template (screenshot or link to draft PR)
+
+## Bonus: CI Smoke Test
+
+- Workflow file: `.github/workflows/lab1-smoke.yml`
+- Trigger: `pull_request` on main
+- Run URL: https://github.com/IamRitz/CyS-Labs/actions/runs/33596650171
+- Workflow run duration: 19s
+
+- Curl response excerpt:
+    GET / HTTP/1.1
+    Host: localhost:3000
+    User-Agent: curl/8.5.0
+    Accept: /
+    <
+    < HTTP/1.1 200 OK
+    < Content-Type: text/html; charset=UTF-8
+    < Content-Length: 9393    GET / HTTP/1.1
